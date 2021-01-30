@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
+    <meta name='description' content='HTML CSS切版最終作業' />
+
+
+    <meta property="og:title" content="HTML CSS切版最終作業" />
+    <meta property="og:description" content="應用所有HTML CSS章節所學來打造一個網頁">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hexschool.com/" />
+    <meta property="og:image"
+        content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fevents%2F2019-js-starter%2Ffb-cover.png?alt=media&token=6d679c21-c0aa-454a-ad16-78c55b91dd50" />
+    <meta property="og:locale" content="zh_TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>切版練習首頁</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./multipage.css">
+</head>
+
+<body>
+    
+    <div class="wrap">
+        <!-- 導覽列 -->
+        <div class="nav">
+            <h1><a href="#">Hex School</a></h1>
+            <ul class="pages">
+                <li><a href="./index.html" class="active">首頁</a></li>
+                <li><a href="./course.html">課程</a></li>
+                <li><a href="./ask.html">問答</a></li>
+            </ul>
+        </div>
+        <!-- 橫幅 -->
+        <div class="banner">
+            <h2>歡迎來到 <span>六角學院</span><br>
+                帶你一起攻略前端設計</h2>
+            <button>馬上去註冊&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+        </div>
+        <!-- 課程 -->
+        <div class="course">
+            <div class="course-title">
+                <h3>精選課程</h3>
+                <p>幫助你拿到前端工程師的門票</p>
+                <input type="button" value="更多課程">
+            </div>
+            <ul>
+                <li>
+                    <div class="img-flex">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/html5.png"
+                            alt="html5">
+                    </div>
+                    <h4>HTML 5 基礎教學</h4>
+                    <p>主流前端網站設計，透過實際的範例，了解正確的網站開發流程。</p>
+                </li>
+                <li>
+                    <div class="img-flex">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/rwd.png"
+                            alt="rwd">
+                    </div>
+                    <h4>響應式網站設計</h4>
+                    <p>六角學院提供業界響應式開發方法，讓學生了解完善的行動版開發觀念。</p>
+                </li>
+                <li>
+                    <div class="img-flex">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/jQuery.png"
+                            alt="jQuery">
+                    </div>
+                    <h4>jQuery實戰教學</h4>
+                    <p>分為四大主題：變數的應用、操作DOM、基本數學運算與套件。</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 表格 -->
+        <div class="comparison">
+            <div class="comparison-title">
+                <h3>課程比較</h3>
+                <p>線上課程與實體課程的差異</p>
+            </div>
+            <table class="comparison-table">
+                <tr>
+                    <th>項目</th>
+                    <th>Hex School線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>一般實體課程</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td class="green">較低</td>
+                    <td class="green">較低</td>
+                    <td>較高</td>
+                </tr>
+                <tr>
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td class="green">較低</td>
+                    <td class="green">很好</td>
+                </tr>
+                <tr>
+                    <td>Code Review</td>
+                    <td class="green">有</td>
+                    <td>無</td>
+                    <td>不一定</td>
+                </tr>
+                <tr>
+                    <td>課程更新速度</td>
+                    <td class="green">普通</td>
+                    <td class="green">普通</td>
+                    <td>較慢</td>
+                </tr>
+                <tr>
+                    <td>多次複習</td>
+                    <td class="green">可</td>
+                    <td class="green">可</td>
+                    <td>不可</td>
+                </tr>
+                <tr>
+                    <td>字幕</td>
+                    <td class="green">有</td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 聯絡資料 -->
+        <div class="contact">
+            <h3>你就是六角的下一個學生！<br>
+                快留下資料讓我們認識你吧</h3>
+            <form class="info">
+                <input type="text" name="name" id="name" placeholder="你的名字是？">
+                <input type="email" name="email" id="email" placeholder="example@mail.com">
+                <input type="submit" class="btn" value="送出">
+            </form>
+        </div>
+        <!-- 註腳 -->
+        <div class="footer">
+            <!-- 版權所有 -->
+            <div class="copyright">
+                <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png"
+                    alt="">
+                <p>&copy; 2018 hexschool</p> 
+            </div>
+            <!-- 粉絲頁 -->
+            <ul class="fans">
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/fb.png"
+                            alt=""></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/ig.png"
+                            alt=""></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/tw.png"
+                            alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
