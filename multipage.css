@@ -462,12 +462,13 @@ table {
     color: #00cc99;
     font-size: 22px;
 }
-.search-icon{ 
+.search-icon{
+    width: 620px;
     position: relative;
-    margin: 50px 0;
+    margin: 50px auto 0;
 }
 .search-icon input{    
-    width: 620px;
+    width: 100%;
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 10px;
