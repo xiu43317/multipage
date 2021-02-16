@@ -64,6 +64,7 @@ table {
     padding: 0px 20px 0px 35px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
 }
 .nav h1 a{
     display: block;
@@ -96,8 +97,16 @@ table {
 /* 橫幅 */
 .banner{
     background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png");
-    padding: 175px 0 175px 35px;
+    height: 560px;
     background-repeat: no-repeat;
+    position: relative;
+}
+.banner .content{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 .banner h2{
     line-height: 1.5;
@@ -251,7 +260,7 @@ table {
     border: none;
 }
 .info textarea{
-    padding-bottom: 200px;
+    height: 200px;
 }
 .info .btn{
     background-color: #00cc99;
@@ -301,8 +310,15 @@ table {
 /* 橫幅 */
 .banner-course{
     background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png");
-    padding: 175px 0 175px 35px;
+    height: 560px;
     background-repeat: no-repeat; 
+    position: relative;
+}
+.banner-course .banner-slogan{
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 40px;
 }
 .banner-course h2{
     font-size: 40px;
@@ -451,8 +467,15 @@ table {
 .banner-ask{
     text-align: center;
     background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png");
-    padding: 175px 0;
-    background-repeat: no-repeat; 
+    height: 560px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.banner-ask .ask-search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .banner-ask h2{
     color: #fff;
@@ -471,7 +494,7 @@ table {
 .search-icon input{    
     width: 100%;
     font-size: 20px;
-    padding: 15px 20px;
+    padding: 15px 50px 15px 20px;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -480,13 +503,14 @@ table {
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
+    cursor: pointer;
 }
 /* 問題頁面 */
 .questions{
     width: 80%;
     margin: 60px auto 0;
 }
-.questions > li > span{
+.questions > li > .refund-title{
     display: flex;
     align-items: flex-end;
     margin-bottom: 40px;
